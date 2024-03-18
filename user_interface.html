@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAREER HUNT BD</title>
+  <style>
+    h1{
+      color: rgb(68, 69, 69);
+      align-items: center;
+      font-size: 30px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      
+      padding: 2%;
+      text-shadow: 4px 5px 8px rgba(65, 64, 64, 0.19);
+      
+    }
+    body{
+      background-image: url(show.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: inline;
+    }
+    
+
+    .container {
+      max-width: 1160px;
+      margin: 20px auto;
+      display: block;
+      
+    }
+    
+    .box {
+      background-color: #f6f6f6;
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      margin-bottom: 10px;
+      display: block;
+      box-shadow: 5px 5px 5px rgba(113, 113, 113, 0.282);
+      
+    }
+    .box3 {
+      background-color: #f6f2cd;
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      margin-bottom: 10px;
+      display: block;
+      box-shadow: 5px 5px 5px rgba(113, 113, 113, 0.282);
+      
+    }
+    .box1 {
+      background-color: #72b1fac3;
+      border: 1px solid #dee2e6;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: block;
+      box-shadow: 5px 5px 5px rgba(46, 48, 88, 0.282);
+      
+    }
+
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      display: block;
+    }
+
+    .row::after {
+      display: table;
+      clear: both;
+    }
+
+    .col-4 {
+      float: left;
+      width: 40%;
+      padding: 5px 5px;
+      display: block;
+      opacity: 1;
+      
+    }
+  
+    @media screen and (max-width: 600px) {
+      .col-4 {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #397e7e;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+    }
+    .btn:hover{
+      opacity: .7;
+      cursor: pointer;
+      color: #fff;
+    }
+    table{
+
+      text-align: center; 
+      border: 15px solid green; 
+      max-width: 100%;
+      border-collapse: collapse;  
+      margin: 0px; 
+      padding: 0px;
+      border: 7px black; 
+      width: 100%; 
+      margin: 0px; 
+      padding: 0px;
+
+    }
+    td{
+      padding: 50px;
+      max-width: 50%;
+      font-size: 40px;
+       
+      background-color: #397e7e;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+   
+    button{
+      width: 30%; 
+      box-sizing: border-box;
+      height: max-content; 
+      font-size: 15px; 
+      padding: 10px; 
+      background-color: #079e50; 
+      color: white; 
+      border-color: transparent;
+      border-radius: 5px;
+      text-align: center;
+      margin: 10px;
+      margin-left: auto;
+      margin-right: auto;
+     
+     
+    }
+    button:hover{
+      cursor: pointer;
+      opacity: .8;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <table >
+      <tr >
+        <td style="max-width: 50%; ">CAREER HUNT BD</td>
+        <td  >
+          <button style="border: 20px white; background-color: #e6e6e6; color: black; " onclick="window.location.href = 'login2.html';">LOGIN AS ADMIN</button>
+          <button style="border: 20px white; background-color: #e6e6e6; color: black; " onclick="window.location.href = 'login.html';">LOGIN AS USER</button>
+          <button style="border: 20px white; background-color: #e6e6e6; color: black; " onclick="window.location.href = 'signup.html';">SIGN UP</button>
+        </td>
+      </tr>
+      
+    </table>
+  </div>
+  <br>
+  <div class="container">
+    <div class="col-4" style="width: 100%; color: #255353; " >
+    
+      <div class="box3">
+       
+    <form id="search-form">
+      <h2 >Search jobs</h2>
+        <input style="width: 30%; box-sizing: border-box;height: max-content; font-size: 15px; padding: 10px; margin-right :2%;" type="text" id="search-box" placeholder="Enter your choice">
+        <select style="width: 30%; box-sizing: border-box;height: max-content; font-size: 15px; padding: 10px; margin-right :2%;" id="category-select">
+            <option value="all">All Categories</option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+        </select>
+        <button  type="submit" style="width: 30%;">Search</button>
+    </form>
+
+    <div id="search-results">
+    </div>
+
+    <script src="search.js"></script>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4" style="width: 100%; color: #397e7e;" >
+        <div class="box">
+          <h2>View all kind of Job's here</h2>
+          <p>You can see every categories job here. Here you can get the official information about the job. You have to use the email to drop your CV.</p>
+          <a href="showdata.php" class="btn"> Browse </a>
+        </div>
+      </div>
+
+      <div class="col-4" style="width: 50%; color: #079e50;">
+        <div class="box" >
+          <h2>Undergraduate Job</h2>
+          <p>You can find all ubdergraduate job here.</p>
+          <a href="undergraduate.php" class="btn" style="background-color: #079e50;"> Browse </a>
+        </div>
+      </div>
+
+      <div class="col-4" style=" color: rgb(142, 112, 4);">
+        <div class="box">
+          <h2>Postgraduate Jobs</h2>
+          <p>You can find all postgraduate job here.</p>
+          <a href="postgraduate.php" class="btn" style="background-color: rgb(142, 112, 4);"> Browse </a>
+        </div>
+      </div>
+
+      <div class="col-4"  style="color: #8e2071;">
+        <div class="box">
+          <h2>CSE Jobs</h2>
+          <p>You can find any kind of IT related job here.</p>
+          <a href="cse.php" class="btn" style="background-color: #8e2071;">Browse </a>
+        </div>
+      </div>
+      <div class="col-4" style="width: 100%; color: #452674;" >
+        <div class="box">
+          <h2>Others</h2>
+          <p>Here you get the combind categories.</p>
+          <a href="others.php" class="btn" style="background-color:#452674;"> Browse </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+<br>
+<br>
+<br>
+<div class="col-4" style="width: 100%; color: #ffffff; background-color: #19303c; margin: 0%; height: 150px; box-sizing: border-box;"  >
+  <div><br><br>
+    <div style="font-size: 10px; border: 1px; padding: 5px; font-size: 20px;">About us</div>
+    <div style="font-size: 10px; border: 1px; padding: 5px; font-size: 20px;">Contact</div>
+    <div style="font-size: 10px; border: 1px; padding: 5px; font-size: 20px;">HelpLine</div>
+  </div>
+  
+</div>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Management</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(show.jpg);
+    margin: 0;
+    padding: 0;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    width: 400px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    color: #ffffff;
+  }
+
+  .btn.insert {
+    background-color: #3498db;
+    
+  }
+
+  .btn.delete {
+    background-color: #e74c3c;
+   
+  }
+  .btn.show {
+    background-color: #3a9243;
+    width: 80%;
+  }
+  button:hover{
+    cursor: pointer;
+    opacity: .8;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Job Management</h1>
+  <a href="manager.html"><button class="btn insert">Insert Job</button></a>
+  <a href="dlt.html"><button class="btn delete">Delete Job</button></a>
+  <a href="showapplicant.php"><button class="btn show">Show Applications</button></a>
+  
+</div>
+</body>
+</html>

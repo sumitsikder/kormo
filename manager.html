@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Job</title>
+  <style>
+    select{
+      font-size: 15px;
+      padding: 5px;
+      margin: 3px 5px;
+      width: 80%;
+      
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    label {
+      margin: 5px;
+      margin-bottom: 5px;
+      display: block;
+      font-weight:bolder;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 80%;
+      padding: 5px;
+      margin: 3px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      font-weight: bold;
+    }
+
+    input[type="submit"] {
+      margin: 0px;
+      padding: 10px 15px;
+      background-color: rgb(9, 80, 67);
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 100%;
+    }
+    input:hover{
+      opacity: 0.8;
+      cursor: pointer;
+    }
+   
+    body{
+      background-image: url(show.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: black;
+    }
+    h2{
+  color: rgb(9, 80, 67);
+  text-align: center;
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  padding-top: 1%;
+  text-shadow: 4px 5px 8px rgba(65, 64, 64, 0.19);
+}
+    form {
+      font-family:sans-serif;
+      
+  width: 500px;
+  
+  margin: 0 auto;
+  padding: 20px;
+  align-content: center;
+  border: 1px solid #080808;
+  background-color: #fafafaf7;
+  box-sizing: border-box;
+  font-size: 22px;
+  border-radius: 5 px;
+  
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Job Declaration</h2>
+    <form method="POST" action="manager.php">
+
+      <label for="nid">NID:</label>
+      <input type="number" id="nid" name="nid" placeholder="nid"><br>
+
+      <label for="jobId">Job Id:</label>
+      <input type="text" id="jobId" name="jobId" placeholder="Job Id"><br>
+
+      <label for="type">Type:</label>
+      <select id="type" name="type">
+        <option value="undergraduate">Undergraduate</option>
+        <option value="postgraduate">Postraduate</option>
+      </select><br>
+
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="cse">CSE</option>
+        <option value="bba">BBA</option>
+        <option value="teacher">Teacher</option>
+        <option value="bank">Bank</option>
+        <option value="office">Office</option>
+        <option value="police">Police</option>
+        <option value="Others">Others</option>
+
+      </select><br>
+
+      <label for="division">Division:</label>
+      <select id="division" name="division">
+        <option value="DHAKA">DHAKA</option>
+        <option value="KHULNA">KHULNA</option>
+        <option value="RAJSHAHI">RAJSHAHI</option>
+        <option value="CHATTAGRAM">CHATTAGRAM</option>
+        <option value="BARISAL">BARISAL</option>
+        <option value="SYLHET">SYLHET</option>
+        <option value="RANGPUR">RANGPUR</option>
+
+      </select><br>
+
+      <label for="company_name">company_name:</label>
+      <input type="text" id="company_name" name="company_name" placeholder="company_name"><br>
+
+      
+
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary" placeholder="Enter salary"><br>
+
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter contact"><br>
+
+      <label for="contact">Upload Your NID :</label>
+      <input type="file" id="nid_pic" name="nid_pic" placeholder="Upload Your NID"><br>
+      
+      
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
+

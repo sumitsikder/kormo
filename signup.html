@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" type="text/css" href="signupstyle.css">
+  <style>
+    body{
+      background-image: url(show.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h3 style="padding: 30px;"> kormo BD </h3>
+  
+  <div class="signup-container" >
+    <h1 >Signup</h1><br>
+    <form method="POST" action="register.php" style="background-color: rgb(160, 159, 161); padding: 20px;" >
+      <label for="username" style="font-size: 18px; color: aliceblue; padding: 5px;" >Usermail:</label><br>
+      <input type="email" name="usermail" placeholder="Usermail" required style="width:60%;
+      padding: 10px;
+      margin-bottom: 15px;"><br>
+       <label for="username" style="font-size: 18px; color: aliceblue; " >Password:</label><br>
+      <input type="password" name="password" placeholder="Password" required style="width:60%;
+      padding: 10px;
+      margin-bottom: 15px;"><br>
+       <label for="username" style="font-size: 18px; color: aliceblue;" >Confirm Password:</label><br>
+      <input type="password" name="confirm_password"  placeholder="Confirm Password" required style="width:60%;;
+      padding: 10px;
+      margin-bottom: 15px;"><br>
+
+      <label for="username" style="font-size: 18px; color: aliceblue;" >Nid number:</label><br>
+      <input type="password"  name="nid_number"  placeholder="Nid Number" required style="width:60%; padding: 10px; 
+      margin-bottom: 15px;"required ><br>
+
+      <label for="username" style="font-size: 18px; color: aliceblue;"  >Upload your nid:</label><br>
+      <input type="file" name="nid" style="font-size: 18px; padding: 10px; " required>
+      <button class="submit1" type="submit" style="color: rgb(249, 250, 250);">Signup</button>
+      <br><br>
+     
+    </form >
+
+   
+
+
+    <script>
+        function redirectToPHP() {
+            window.location.href = "register.php";
+        }
+    </script>
+  </div>
+</body>
+</html>

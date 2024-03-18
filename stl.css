@@ -1,0 +1,84 @@
+
+form {
+  width: 700px;
+  height: 200;
+  margin: 0 auto;
+  padding: 20px;
+  align-content: center;
+  border: 2px solid #545454;
+  background-color: #dde4e2c8;
+  box-sizing: border-box;
+  font-size: 50px;
+  border-radius: 10 px;
+  
+}
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(9, 80, 67);
+  color: white;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  font-size: 20px;
+}
+input{
+  border: 3px black;
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+h1{
+  color: rgb(9, 80, 67);
+  font-size: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-bottom: 105px;
+  padding-top: 3%;
+  text-shadow: 4px 5px 8px rgba(65, 64, 64, 0.19);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="stl.css">
+ <style>
+  body{
+      background-image: url(show.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+ </style>
+</head>
+<body>
+   <div class="login-container">
+    <h1>User Login</h1>
+    <form method="POST" action="login.php">
+      <label for="username" style="font-size: 18px;" >Usermail:</label>
+      <input type="email" name="usermail" placeholder="Usermail" required style="width:60%;
+      padding: 10px;
+      margin-bottom: 15px;"><br>
+       <label for="username" style="font-size: 18px;" >Password:</label>
+      <input type="password" name="password" placeholder="Password" required style="width:60%;
+      padding: 10px;
+      margin-bottom: 15px;" >
+      <button type="submit" >Login</button>
+    </form>
+    
+  </div> 
+</body>
+</html>
